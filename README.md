@@ -1,4 +1,4 @@
-**Snipcart Ecommerce site**
+**Snipcart Ecommerce site** :
 An Ecommerce site created using snipcart and React Typescript.
 
 
