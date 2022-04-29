@@ -9,7 +9,7 @@ export interface Prod{
 
 
 
-
+// mock api for the products
 export const Services: Prod[] = [
   {
     id: 1,

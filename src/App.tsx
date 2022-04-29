@@ -1,26 +1,24 @@
-import React from 'react';
-import { Counter } from './features/counter/Counter';
-import './App.css';
-import Nav from './components/Nav';
-import Statement from './components/landing/Statement';
-import Footer from './components/Footer';
-import Products from './components/landing/Products';
+import React from "react";
+import { Counter } from "./features/counter/Counter";
+import "./App.css";
+import Nav from "./components/Nav";
+import Statement from "./components/landing/Statement";
+import Footer from "./components/Footer";
+import Products from "./components/landing/Products";
 import { Link, BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Good from './components/Prod';
-import Prodd from './components/Prod';
+import Good from "./components/Prod";
+import Prodd from "./components/Prod";
 
-
-const App : React.FC = () => {
-
-  
+const App: React.FC = () => {
   return (
     <Router>
       <div className="App h-screen w-screen  overflow-x-hidden bg-slate-100">
         {/* The nav component */}
 
         <Nav />
-
+        {/* Routes */}
         <Routes>
+          {/* Goes to product after click */}
           <Route path="product" element={<Prodd />}>
             <Route path=":id" element={<Prodd />} />
           </Route>
@@ -49,6 +47,6 @@ const App : React.FC = () => {
       </div>
     </Router>
   );
-}
+};
 
 export default App;

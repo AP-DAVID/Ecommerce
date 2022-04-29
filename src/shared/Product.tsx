@@ -18,6 +18,7 @@ const Product: React.FC<Prod> = ({ image1, desc2, desc1, price, id }) => {
       onMouseLeave={() => setIsShown(false)}
       className="w-52 cursor-pointer bg-slate-100 mb-16 border-2 mr-10  rounded space-y-3"
     >
+      {/* link to the product description page */}
       <Link to={`/product/${id}`}>
         <img
           src={image1}
@@ -28,7 +29,7 @@ const Product: React.FC<Prod> = ({ image1, desc2, desc1, price, id }) => {
           {isShown ? desc2 : desc1}
         </div>
       </Link>
-
+      {/* button to add product to cart using snipcart*/}
       <div className="flex justify-around font-medium border-2 hover:border-blue-500 hover:font-medium px-3 hover:text-blue-500  shadow-md py-3">
         <button
           className="snipcart-add-item border-2 rounded-md px-5 hover:border-blue-500"
